@@ -175,7 +175,7 @@ def main():
     print("MSG: 0x" + "".join("{:02X}".format(x) for x in message))
     #make signature
     signature = sign(p, d, q, G, sk, message)
-    print("MSG: 0x" + "".join("{:02X}".format(x) for x in signature))
+    print("SIG: 0x" + "".join("{:02X}".format(x) for x in signature))
 
     print("Verify:")
     #verify signature
